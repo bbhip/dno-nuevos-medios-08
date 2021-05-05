@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --fondo: #000;
-    --figura: #ddd;
+    --fondo: #5d0110;
+    --figura: #fff;
 }
 
 * {
@@ -10,8 +10,15 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap');
+
+ @font-face { 
+    font-family: The Amazing Spiderman; 
+    src: url('smfont.ttf'); 
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Mukta', sans-serif;
     background: var(--fondo);
     color: var(--figura);
 }
@@ -92,6 +99,10 @@ header div p{
         width: 100%;
         line-height: 1.5;
     }     
+}
+
+header h1 {
+    font-family: The Amazing Spiderman;
 }
 
 /* para todas las páginas que no son portada */
