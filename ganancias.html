@@ -31,8 +31,13 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: 'Ganancias a nivel mundial (en millones de dólares)',
             data: [825, 788, 894, 757, 708, 880, 1131, , 375],
+            backgroundColor: 'rgba(93, 1, 16, 0.75)',
+            order:1
+        },{
+            label: 'Presupuesto (en millones de dólares)',
+            data: [139, 200, 258, 230, 240, 175, 160, , 90],
             backgroundColor: 'rgba(255,255,255, 0.75)',
-            borderWidth: 0
+            order:2
         }]
     },
     options: {
