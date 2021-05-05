@@ -26,19 +26,52 @@
         </div>
 <script>
     var mymap = L.map('mapa').setView([33.5427796,9.9672612], 2);
+
+    var s1 = L.icon({
+                    iconUrl: "images/icons/spiderman_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s2 = L.icon({
+                    iconUrl: "images/icons/spiderman2_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s3 = L.icon({
+                    iconUrl: "images/icons/spiderman3_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s4 = L.icon({
+                    iconUrl: "images/icons/tasm_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s5 = L.icon({
+                    iconUrl: "images/icons/tasm2_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s6 = L.icon({
+                    iconUrl: "images/icons/homecoming_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s7 = L.icon({
+                    iconUrl: "images/icons/farfromhome_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s8 = L.icon({
+                    iconUrl: "images/icons/nowayhome_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+    var s9 = L.icon({
+                    iconUrl: "images/icons/spiderverse_m.png",
+                    iconSize: [50,50],iconAnchor: [25, 50]});
+
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
         id: 'mapbox/dark-v10',
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-    L.marker([40.7591704, -74.0392717]).addTo(mymap).bindPopup("<b>Spider-Man, Spider-Man 2, Spider-Man 3, The Amazing Spider-Man</b>. Manhattan, New York, USA.");
-    L.marker([33.7679192,-84.5606919]).addTo(mymap).bindPopup("<b>Spider-Man: Homecoming</b>. Atlanta, Georgia, USA.");
-    L.marker([45.4046829,12.1071398]).addTo(mymap).bindPopup("<b>Spider-Man: Far From Home</b>. Venecia, Italia.");
-    L.marker([34.0207305,-118.6919329]).addTo(mymap).bindPopup("<b>The Amazing Spider-Man 2</b>. Los Angeles, California, USA.");
-    L.marker([51.5287352,-0.381787]).addTo(mymap).bindPopup("<b>Spider-Man: Far From Home</b>. Londres, Reino Unido.");
-    L.marker([64.1335729,-21.9925248]).addTo(mymap).bindPopup("<b>Spider-Man: No Way Home</b>. Reykjavik, Islandia.");
-    L.marker([41.8339042, -88.0121595]).addTo(mymap).bindPopup("<b>Spider-Man: Into the Spider-Verse</b>. Chicago, Illinois, USA.");
+    L.marker([40.7591704, -74.0392717], {icon: s1}).addTo(mymap).bindPopup("<b>Spider-Man</b>. Manhattan, New York, USA.");
+    L.marker([40.6512004,-74.1513883], {icon: s2}).addTo(mymap).bindPopup("<b>Spider-Man 2</b>. Queens, New York, USA.");
+    L.marker([41.4977042,-81.8459468], {icon: s3}).addTo(mymap).bindPopup("<b>Spider-Man 3</b>. Cleveland, Ohio, USA.");
+    L.marker([40.6454199,-74.0850845], {icon: s4}).addTo(mymap).bindPopup("<b>The Amazing Spider-Man</b>. Brooklyn, New York, USA.");
+    L.marker([34.0207305,-118.6919329], {icon: s5}).addTo(mymap).bindPopup("<b>The Amazing Spider-Man 2</b>. Los Angeles, California, USA.");
+    L.marker([33.7679192,-84.5606919], {icon: s6}).addTo(mymap).bindPopup("<b>Spider-Man: Homecoming</b>. Atlanta, Georgia, USA.");
+    L.marker([45.4046829,12.1071398], {icon: s7}).addTo(mymap).bindPopup("<b>Spider-Man: Far From Home</b>. Venecia, Italia.");
+    L.marker([51.5287352,-0.381787], {icon: s7}).addTo(mymap).bindPopup("<b>Spider-Man: Far From Home</b>. Londres, Reino Unido.");
+    L.marker([64.1335729,-21.9925248], {icon: s8}).addTo(mymap).bindPopup("<b>Spider-Man: No Way Home</b>. Reykjavik, Islandia.");
+    L.marker([41.8339042, -88.0121595], {icon: s9}).addTo(mymap).bindPopup("<b>Spider-Man: Into the Spider-Verse</b>. Chicago, Illinois, USA.");
+
 
 </script>
     </body>
